@@ -42,6 +42,17 @@ int divisores (int a, int b[]){
 
 
 
+//QUESTÃO 4
+
+//QUESTÃO 5
+float compoe (int a, int b){
+float frac=(float) b;
+while (frac>1){
+frac=frac/10;
+} 
+return a+frac;
+}
+
 
 
 
