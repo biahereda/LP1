@@ -1,0 +1,103 @@
+//QUESTÃO 1
+int maior_de_dois (int a, int b){
+if (a>b){
+    return (a);
+}
+    else return (b);
+}
+
+
+//QUESTÃO 2
+int menor_de_tres (int a, int b, int c){
+ int menornumero=a;
+    if (menornumero>b){
+        menornumero=b;
+    }
+   if (menornumero>c){
+        menornumero=c;
+    }
+
+    return (menornumero);
+}
+
+
+//Questao 3
+int maior_de_quatro (int a, int b, int c, int d){
+   int maiornumero =a;
+    if (b>maiornumero){
+        maiornumero =b;
+    }
+    if (c>maiornumero){
+        maiornumero=c;
+    }
+    if (d>maiornumero){
+        maiornumero=d;
+    }
+    return (maiornumero);
+}
+
+//QUESTÃO 4
+int maior_de_todos (int *a, int b){
+   int maiordetodos= a [0];
+    int i,x;
+    for (i=1; i<=b;i++){
+        if (maiordetodos<a[i]){
+                maiordetodos = a[i];
+                x=i;
+        }
+        if (maiordetodos=a[i]){
+            maiordetodos=a[0];
+        }
+    }
+    return (x);
+}
+}
+
+
+//questao 5
+int existe (int a[], int b, int c)
+{
+    int k=0,i;
+    for (i=0; i<b; i++){
+        if (a[i]==c){
+                k++;
+            }
+     }
+     return k;
+}
+
+
+//questao 6
+int conjuntos_iguais (int a[], int b[], int c)
+{
+    int i,j,o=0;
+    for (i=0;i<c;i++){
+        for (j=0;j<c;j++){
+            if (a[i]==b[j]){
+                    o++;
+                }
+     }
+
+    }
+    if (o==c){
+        return 1;
+    }
+    else return 0;
+
+}
+
+//questao 7
+int rodada_palitinhos (int a[], int b[], int c)
+{ int i,soma=0,j,k;
+    for (i=0; i<c;i++){
+        soma = soma + a[i];
+    }
+    for (j=0;j<c;j++){
+            if (soma==b[j]){
+                k=j;
+                return k;
+            }
+    }
+    k=-1;
+    return k;
+}
