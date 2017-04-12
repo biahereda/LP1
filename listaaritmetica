@@ -1,0 +1,48 @@
+//QUESTÃO 1
+int soma (int a, int b) {
+return (a+b);
+}
+
+
+//QUESTÃO 2
+float opera (float c, float d, int e){
+float z;
+if (e==0){
+z=c+d;
+return (z);
+}
+else if (e==1){
+z=d-c;
+return (z);
+}
+else if (e==2){
+z=c*d;
+return (z);
+}
+else if (e==3){
+z=c/d;
+}
+return (z);
+}
+else printf ("OPERAÇAO NAO INDICADA");
+}
+
+
+//QUESTÃO 3
+int divisores (int a, int b[]){
+  int c=0;
+  for (i=1;i<=a;i++){
+    if (a%i=0){
+            b[i-1]=a;
+            c=c+1;
+    }
+    return (c);
+  }
+}
+
+
+
+
+
+
+
